@@ -3,15 +3,17 @@
 {% block sidebar %}
   <h1 class="font-extrabold text-4xl text-white text-center">mraag<span class="text-pink-400">.xyz</span></h1>
   <img src="/images/illustration.png" />
-  <p class="font-mono text-gray-500">
-    A corner of the web reserved for the ramblings of one
-    <a href="#" class="text-pink-400">Martin Raag</a>,
-    who is a
-  </p>
-  <p class="font-mono text-gray-500 py-2">
-    software developer ⌨️, hobby photographer 📷, avid runner 🏃‍♂️, aspiring writer 🖋
-    and available for hire 👨🏼‍💻.
-  </p>
+  <div  class="font-mono leading-relaxed text-gray-500">
+    <p>
+      A corner of the web reserved for the ramblings of one
+      <a href="#" class="text-pink-400">Martin Raag</a>,
+      who is a<br/>
+      ⌨️ software developer,<br/>
+      📷 hobby photographer,<br/>
+      🏃‍♂️ avid runner,<br/>
+      👨🏼‍💻 and available for hire.
+    </p>
+  </div>
   <div class="flex py-10 justify-center">
     <a href="#" class="px-2 text-gray-500">
       {{ '/site/_includes/svg/rss.svg' | svgContents | safe }}
