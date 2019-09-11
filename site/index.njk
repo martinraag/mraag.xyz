@@ -42,7 +42,7 @@
     <div class="py-4 md:px-20 px-10">
       <a href="{{ post.url }}" class="font-serif text-2xl text-gray-900 hover:text-pink-400">{{ post.data.title }}</a>
       <p class="font-serif text-gray-700 mt-1">{{ post.date | date }}</p>
-      <p class="font-serif text-gray-900 mt-1">It must have been about 19 years ago that I was gifted a children’s book about the internet. It was my first exposure, if not a particularly deep one, to the protocols and languages that drive so much of the world around us. Little did the 11 year old me know he had just had a glimpse of what would become his career and hobby for years to come.</p>
+      <p class="font-serif text-gray-900 mt-1">{{ post.templateContent | firstParagraph | striptags }}</p>
       <div class="mt-2 mb-2">
         <a href="{{ post.url }}" class="font-serif text-pink-400 hover:underline">Read more</a>
       </div>

@@ -8,6 +8,7 @@ module.exports = function(config) {
   config.addPlugin(svgContentsPlugin);
   // Add filters
   config.addFilter('date', date => moment(date).format('MMMM D, YYYY'));
+  config.addFilter('firstParagraph', content => content.split('</p>')[0]);
   // Copy images
   config.addPassthroughCopy('./site/images');
   config.addPassthroughCopy('./site/css');
