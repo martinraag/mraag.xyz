@@ -11,6 +11,7 @@
     "build-css": "postcss css/tailwind.css -o site/css/main.css"
   },
   "devDependencies": {
+    "dotenv": "^8.1.0",
     "prettier": "^1.18.2"
   },
   "dependencies": {
