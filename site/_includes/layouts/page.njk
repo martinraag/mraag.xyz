@@ -1,0 +1,16 @@
+{% extends 'layouts/base.njk' %}
+
+{% block body %}
+
+  <div class="md:flex h-screen">
+    <div class="md:flex-initial md:w-4/12 w-full text-gray-700 px-10 md:py-24 py-16 bg-gray-900">
+      {% block sidebar %}
+      {% endblock %}
+    </div>
+    <div class="md:flex-initial text-gray-700 py-16 text-left w-full">
+      {% block content %}
+      {% endblock %}
+    </div>
+  </div>
+
+{% endblock %}

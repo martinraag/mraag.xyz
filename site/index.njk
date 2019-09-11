@@ -1,0 +1,50 @@
+{% extends 'layouts/page.njk' %}
+
+{% block sidebar %}
+  <h1 class="font-extrabold text-4xl text-white text-center">mraag<span class="text-pink-400">.xyz</span></h1>
+  <img src="/images/illustration.png" />
+  <p class="font-mono text-gray-500">
+    A corner of the web reserved for the ramblings of one
+    <a href="#" class="text-pink-400">Martin Raag</a>,
+    who is a
+  </p>
+  <p class="font-mono text-gray-500 py-2">
+    software developer ⌨️, hobby photographer 📷, avid runner 🏃‍♂️, aspiring writer 🖋
+    and available for hire 👨🏼‍💻.
+  </p>
+  <div class="flex py-10 justify-center">
+    <a href="#" class="px-2 text-gray-500">
+      {{ '/site/_includes/svg/rss.svg' | svgContents | safe }}
+    </a>
+    <a href="#" class="px-2 text-gray-500">
+      {{ '/site/_includes/svg/github.svg' | svgContents | safe }}
+    </a>
+    <a href="#" class="px-2 text-gray-500">
+      {{ '/site/_includes/svg/linkedin.svg' | svgContents | safe }}
+    </a>
+    <a href="#" class="px-2 text-gray-500">
+      {{ '/site/_includes/svg/twitter.svg' | svgContents | safe }}
+    </a>
+    <a href="#" class="px-2 text-gray-500">
+      {{ '/site/_includes/svg/instagram.svg' | svgContents | safe }}
+    </a>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="h-10">
+    <p class="tracking-widest font-thin uppercase text-2xl md:ml-10 ml-5 text-gray-900">Recent Posts</p>
+  </div>
+  <hr/>
+  {%- for post in collections.post -%}
+    <div class="py-4 md:px-20 px-10">
+      <a href="{{ post.url }}" class="font-serif text-2xl text-gray-900">{{ post.data.title }}</a>
+      <p class="font-serif text-gray-700 mt-1">{{ post.date | date }}</p>
+      <p class="font-serif text-gray-900 mt-1">It must have been about 19 years ago that I was gifted a children’s book about the internet. It was my first exposure, if not a particularly deep one, to the protocols and languages that drive so much of the world around us. Little did the 11 year old me know he had just had a glimpse of what would become his career and hobby for years to come.</p>
+      <div class="mt-2 mb-2">
+        <a href="{{ post.url }}" class="font-serif text-pink-400">Read more</a>
+      </div>
+      <hr/>
+    </div>
+  {%- endfor -%}
+{% endblock %}
