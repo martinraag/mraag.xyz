@@ -2,24 +2,10 @@
 
 {% block body %}
 
-  <div class="flex items-center h-16 xl:px-40 md:px-16 px-4 text-gray-800">
+  <div class="items-center h-16 xl:px-40 md:px-16 px-4 text-gray-800">
     <a href="/" class="font-extrabold text-4xl">mraag<span class="text-pink-400">.xyz</span></h1>
-    <div class="flex flex-row-reverse flex-grow">
-      <a href="{{ social.instagram }}" class="px-2">
-        {{ '/site/_includes/svg/instagram.svg' | svgContents | safe }}
-      </a>
-      <a href="{{ social.twitter }}" class="px-2">
-        {{ '/site/_includes/svg/twitter.svg' | svgContents | safe }}
-      </a>
-      <a href="{{ social.linkedin }}" class="px-2">
-        {{ '/site/_includes/svg/linkedin.svg' | svgContents | safe }}
-      </a>
-      <a href="{{ social.github }}" class="px-2">
-        {{ '/site/_includes/svg/github.svg' | svgContents | safe }}
-      </a>
-      <a href="#" class="px-2">
-        {{ '/site/_includes/svg/rss.svg' | svgContents | safe }}
-      </a>
+    <div class="float-right flex py-5">
+      {% include "links.njk" %}
     </div>
   </div>
 
