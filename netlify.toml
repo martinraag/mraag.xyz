@@ -18,3 +18,22 @@
     worker-src 'self';
     block-all-mixed-content;
     disown-opener;'''
+    Feature-Policy = '''ambient-light-sensor 'none';
+    autoplay 'none';
+    accelerometer 'none';
+    camera 'none';
+    display-capture 'none';
+    document-domain 'none';
+    encrypted-media 'none';
+    fullscreen 'none';
+    gyroscope 'none';
+    magnetometer 'none';
+    midi 'none';
+    payment 'none';
+    picture-in-picture 'none';
+    speaker 'none';
+    sync-xhr 'none';
+    usb 'none';
+    wake-lock 'none';
+    webauthn 'none';
+    vr 'none';'''
