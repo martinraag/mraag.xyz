@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('./env');
 const moment = require('moment');
 const rssPlugin = require('@11ty/eleventy-plugin-rss');
 const svgContentsPlugin = require('eleventy-plugin-svg-contents');

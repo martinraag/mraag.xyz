@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('./env');
 const autoprefixer = require('autoprefixer');
 const concat = require('gulp-concat');
 const del = require('del');
