@@ -13,6 +13,7 @@ module.exports = function(config) {
   // Copy images
   config.addPassthroughCopy('./site/images');
   config.addPassthroughCopy('./site/css');
+  config.addPassthroughCopy('./site/js');
   return {
     dir: {
       input: 'site',

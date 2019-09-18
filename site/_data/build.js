@@ -1,4 +1,4 @@
 module.exports = {
-  environment: process.env.ELEVENTY_ENV || 'development',
+  environment: process.env.NODE_ENV || 'development',
   time: new Date(),
 };
