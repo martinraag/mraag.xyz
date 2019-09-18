@@ -10,7 +10,7 @@
     X-Frame-Options = "DENY"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "no-referrer-when-downgrade"
-    Content-Security-Policy-Report-Only = '''default-src 'self';
+    Content-Security-Policy = '''default-src 'self';
     script-src 'self' https://www.google-analytics.com;
     img-src 'self' https://www.google-analytics.com;
     connect-src 'self' https://www.google-analytics.com;
