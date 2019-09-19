@@ -2,8 +2,14 @@
 
 {% block sidebar %}
   <h1 class="font-extrabold text-4xl text-white text-center">mraag<span class="text-pink-400">.xyz</span></h1>
-  <img src="/images/illustration.png" />
-  <div  class="font-mono leading-relaxed text-gray-500">
+  <img class="ml-auto mr-auto"
+    srcset="/images/illustration-light-250.png 1x,
+            /images/illustration-light-500.png 2x,
+            /images/illustration-light-750.png 3x,
+            /images/illustration-light-1000.png 4x"
+    src="/images/illustration-light-250.png"
+    width="250" height="250" alt="Site logo">
+  <div class="font-mono leading-relaxed text-gray-500">
     <p>
       A corner of the web reserved for the ramblings of one
       <a href="#" class="text-pink-400">Martin Raag</a>,
