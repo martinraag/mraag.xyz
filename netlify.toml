@@ -37,3 +37,18 @@
     wake-lock 'none';
     webauthn 'none';
     vr 'none';'''
+
+[[headers]]
+  for = "/feed.xml"
+
+  [headers.values]
+    Referrer-Policy = "no-referrer-when-downgrade"
+    Content-Security-Policy = '''default-src 'self';
+    script-src 'self' https://www.google-analytics.com;
+    img-src 'self' https://www.google-analytics.com;
+    connect-src 'self' https://www.google-analytics.com;
+    style-src 'self' 'unsafe-inline';
+    frame-ancestors 'none';
+    worker-src 'self';
+    block-all-mixed-content;
+    disown-opener;'''
