@@ -8,7 +8,7 @@
         <h1 class="font-extrabold text-4xl text-white text-center">
           mraag<span class="text-pink-400">.xyz</span>
         </h1>
-        <div class="{% if page != "index" -%} md:block hidden {%- endif %}">
+        <div class="{% if route != "index" -%} md:block hidden {%- endif %}">
           <img class="ml-auto mr-auto"
             srcset="/images/illustration-light-250.png 1x,
                     /images/illustration-light-500.png 2x,
@@ -32,6 +32,9 @@
       <div class="items-center h-16 xl:pr-40 md:pr-16 pr-4">
         <div class="float-left mt-3">
           {% block header %}
+            <span class="tracking-widest font-mono text-2xl md:ml-10 ml-4 text-gray-900">
+              {{ header }}
+            </span>
           {% endblock %}
         </div>
         <div class="flex float-right py-5">
@@ -40,6 +43,9 @@
       </div>
       <hr/>
       {% block content %}
+        <div class="{% if contentClass -%} {{ contentClass }} {%- endif %} py-4 md:px-20 px-10">
+          {{ content | safe }}
+        </div>
       {% endblock %}
     </div>
   </div>

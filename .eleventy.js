@@ -21,6 +21,6 @@ module.exports = function(config) {
     },
     templateFormats: ['njk', 'md'],
     htmlTemplateEngine: 'njk',
-    markdownTemplateEngine: 'njk',
+    markdownTemplateEngine: 'md',
   };
 };

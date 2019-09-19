@@ -1,12 +1,7 @@
 {% extends 'layouts/page.njk' %}
 
-{% set page = "index" %}
-
-{% block header %}
-  <span class="tracking-widest font-mono text-2xl md:ml-10 ml-4 text-gray-900">
-    Recent posts
-  </span>
-{% endblock %}
+{% set route = "index" %}
+{% set header = "Recent posts" %}
 
 {% block content %}
   {%- for post in collections.post -%}
