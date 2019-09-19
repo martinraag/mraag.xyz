@@ -3,11 +3,45 @@
 {% block body %}
 
   <div class="md:flex min-h-screen">
-    <div class="md:flex-initial md:w-4/12 w-full min-h-full text-gray-700 px-10 lg:py-24 md:py-16 py-6 bg-gray-900">
+    <div class="md:max-w-md w-full min-h-full text-gray-700 px-10 lg:py-24 md:py-16 py-6 bg-gray-900">
       {% block sidebar %}
+        <h1 class="font-extrabold text-4xl text-white text-center">
+          mraag<span class="text-pink-400">.xyz</span>
+        </h1>
+        <img class="ml-auto mr-auto"
+          srcset="/images/illustration-light-250.png 1x,
+                  /images/illustration-light-500.png 2x,
+                  /images/illustration-light-750.png 3x,
+                  /images/illustration-light-1000.png 4x"
+          src="/images/illustration-light-250.png"
+          width="250" height="250" alt="Site logo">
+        <div class="w-full font-mono leading-relaxed text-gray-500">
+          <p>
+            A corner of the web reserved for the ramblings of one
+            <a href="#" class="text-pink-400">Martin Raag</a>,
+            who is a<br/>
+            ⌨️ software developer,<br/>
+            📷 hobby photographer,<br/>
+            🏃‍♂️ avid runner,<br/>
+            👨🏼‍💻 and available for hire.
+          </p>
+        </div>
+        <div class="flex py-10 justify-center text-gray-500">
+          {% include "links.njk" %}
+        </div>
       {% endblock %}
     </div>
-    <div class="md:flex-initial text-gray-700 py-6 text-left w-full">
+    <div>
+      <div class="items-center h-16 xl:pr-40 md:pr-16 pr-4">
+        <div class="float-left mt-3">
+          {% block header %}
+          {% endblock %}
+        </div>
+        <div class="flex float-right py-5">
+          {% include "nav.njk" %}
+        </div>
+      </div>
+      <hr/>
       {% block content %}
       {% endblock %}
     </div>
