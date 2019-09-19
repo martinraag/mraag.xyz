@@ -1,5 +1,9 @@
 @tailwind base;
 
+a :hover {
+  @apply text-pink-400;
+}
+
 .mr-post p {
   @apply mt-4;
 }
