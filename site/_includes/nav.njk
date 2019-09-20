@@ -1,6 +1,6 @@
-<a href="/" class="px-2 {% if route == "index" -%} text-gray-500 {%- endif %}">
+<a href="/" class="pr-4 {% if route == "index" -%} text-gray-500 {%- endif %}">
   {{ '/site/_includes/svg/home.svg' | svgContents | safe }}
 </a>
-<a href="/about" class="px-2 {% if route == "about" -%} text-gray-500 {%- endif %}">
+<a href="/about" class="{% if route == "about" -%} text-gray-500 {%- endif %}">
   {{ '/site/_includes/svg/info.svg' | svgContents | safe }}
 </a>
