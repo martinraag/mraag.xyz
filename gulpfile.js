@@ -7,15 +7,9 @@ const gulp = require('gulp');
 const tailwindcss = require('tailwindcss');
 const postcss = require('gulp-postcss');
 
-const jsSrc = ['./js/**/*.js'];
-if (process.env.NODE_ENV !== 'production' || !process.env.MR_GA_ID) {
-  console.warn('Excluding analytics from JavaScript bundle.');
-  jsSrc.push('!./js/analytics.js');
-}
-
 gulp.task('js', () =>
   gulp
-    .src(jsSrc)
+    .src('./js/**/*.js')
     .pipe(concat('main.js'))
     .pipe(envify())
     .pipe(gulp.dest('./site/js'))

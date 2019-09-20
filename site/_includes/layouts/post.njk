@@ -2,38 +2,38 @@
 
 {% block body %}
 
-  <div class="items-center h-16 xl:px-40 md:px-16 px-4 text-gray-800">
+  <div class="items-center h-16 xl:px-40 md:px-16 px-5 text-gray-900">
     <a href="/" class="font-extrabold text-4xl">mraag<span class="text-pink-400">.xyz</span></h1>
-    <div class="hidden md:flex float-right py-5">
-      {% include "links.njk" %}
+    <div class="flex float-right py-5">
+      {% include "nav.njk" %}
     </div>
   </div>
 
   <hr/>
 
-  <div class="container mx-auto lg:px-64 md:px-16 px-4 py-6">
+  <div class="container mx-auto lg:px-56 md:px-16 px-5 py-6">
     <h1 class="font-serif text-4xl text-gray-900">{{ title | safe }}</h1>
     <p class="font-serif text-lg text-gray-700">{{ date | date }}</p>
     <div class="mr-post font-serif text-lg text-gray-900 leading-relaxed mt-3">
       {{ content | safe }}
     </div>
 
-  <div class="flex justify-center font-mono border border-solid border-pink-400 mt-6 p-6">
-    <img class="h-0 mr-0 md:h-32 md:mr-6 invisible md:visible"
-      srcset="/images/illustration-dark-128.png 1x,
-              /images/illustration-dark-256.png 2x,
-              /images/illustration-dark-384.png 3x,
-              /images/illustration-dark-512.png 4x"
-      src="/images/illustration-dark-128.png"
-      width="128" height="128" alt="Site logo">
-    <p>This post was written by <a href="#" class="text-pink-400">Martin Raag</a>, who is a<br/>
-      ⌨️ software developer,<br/>
-      📷 hobby photographer,<br/>
-      🏃‍♂️ avid runner,<br/>
-      👨🏼‍💻 and available for hire.
-    </p>
-  <div>
-
+  <div class="border border-solid border-pink-400 mt-6 p-6">
+    <div class="flex justify-center font-mono ">
+      <img class="h-0 mr-0 md:h-32 md:mr-6 hidden md:block"
+        srcset="/images/illustration-dark-128.png 1x,
+                /images/illustration-dark-256.png 2x,
+                /images/illustration-dark-384.png 3x,
+                /images/illustration-dark-512.png 4x"
+        src="/images/illustration-dark-128.png"
+        width="128" height="128" alt="Site logo">
+      <p>Written by
+        {% include "blurb.njk" %}
+      </p>
+    </div>
+    <div class="flex justify-center mt-6 w-full">
+      {% include "links.njk" %}
+    </div>
   </div>
 
 {% endblock %}

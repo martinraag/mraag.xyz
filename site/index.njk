@@ -1,40 +1,18 @@
 {% extends 'layouts/page.njk' %}
 
-{% block sidebar %}
-  <h1 class="font-extrabold text-4xl text-white text-center">mraag<span class="text-pink-400">.xyz</span></h1>
-  <img class="ml-auto mr-auto"
-    srcset="/images/illustration-light-250.png 1x,
-            /images/illustration-light-500.png 2x,
-            /images/illustration-light-750.png 3x,
-            /images/illustration-light-1000.png 4x"
-    src="/images/illustration-light-250.png"
-    width="250" height="250" alt="Site logo">
-  <div class="font-mono leading-relaxed text-gray-500">
-    <p>
-      A corner of the web reserved for the ramblings of one
-      <a href="#" class="text-pink-400">Martin Raag</a>,
-      who is a<br/>
-      ⌨️ software developer,<br/>
-      📷 hobby photographer,<br/>
-      🏃‍♂️ avid runner,<br/>
-      👨🏼‍💻 and available for hire.
-    </p>
-  </div>
-  <div class="flex py-10 justify-center text-gray-500">
-    {% include "links.njk" %}
-  </div>
-{% endblock %}
+{% set route = "index" %}
+{% set header = "Recent posts" %}
 
 {% block content %}
-  <div class="h-10">
-    <p class="tracking-widest font-mono text-2xl md:ml-10 ml-5 text-gray-900">Recent posts</p>
-  </div>
-  <hr/>
   {%- for post in collections.post -%}
-    <div class="py-4 md:px-20 px-10">
-      <a href="{{ post.url }}" class="font-serif text-2xl text-gray-900 hover:text-pink-400">{{ post.data.title }}</a>
+    <div class="py-4 md:px-12 px-5">
+      <a href="{{ post.url }}" class="font-serif text-2xl text-gray-900 hover:text-pink-400">
+        {{ post.data.title }}
+      </a>
       <p class="font-serif text-gray-700 mt-1">{{ post.date | date }}</p>
-      <p class="font-serif text-gray-900 mt-1">{{ post.templateContent | firstParagraph | striptags }}</p>
+      <p class="font-serif text-gray-900 mt-1">
+        {{ post.templateContent | firstParagraph | striptags }}
+      </p>
       <div class="mt-2 mb-2">
         <a href="{{ post.url }}" class="font-serif text-pink-400 hover:underline">Read more</a>
       </div>

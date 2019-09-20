@@ -1,7 +1,31 @@
 @tailwind base;
 
+a :hover {
+  @apply text-pink-400;
+}
+
 .mr-post p {
   @apply mt-4;
+}
+
+.mrx-about-content {
+  @apply font-serif;
+  @apply text-gray-900;
+  @apply mt-1;
+  @apply text-lg;
+}
+
+.mrx-about-content p {
+  @apply mb-4;
+}
+
+.mrx-about-content h1 {
+  @apply text-2xl;
+  @apply mb-4;
+}
+
+.mrx-about-content a {
+  @apply text-pink-400;
 }
 
 @tailwind components;
