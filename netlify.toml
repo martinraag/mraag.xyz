@@ -53,6 +53,19 @@
     block-all-mixed-content;
     disown-opener;'''
 
+[[headers]]
+  for = "/js/*"
+
+  [headers.values]
+    Cache-Control = "public, s-max-age=604800"
+
+[[headers]]
+  for = "/css/*"
+
+  [headers.values]
+    Cache-Control = "public, s-max-age=604800"
+
+
 [[redirects]]
   from = "/resume"
   to = "/assets/resume-mraag.pdf"
