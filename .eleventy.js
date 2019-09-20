@@ -12,8 +12,8 @@ module.exports = function(config) {
   config.addFilter('firstParagraph', content => content.split('</p>')[0]);
   // Copy images
   config.addPassthroughCopy('./site/images');
-  config.addPassthroughCopy('./site/css');
-  config.addPassthroughCopy('./site/js');
+  config.addPassthroughCopy('./site/css/*.css');
+  config.addPassthroughCopy('./site/js/*.js');
   config.addPassthroughCopy('./site/assets');
   return {
     dir: {

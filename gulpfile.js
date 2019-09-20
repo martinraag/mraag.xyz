@@ -6,12 +6,16 @@ const envify = require('gulp-envify');
 const gulp = require('gulp');
 const tailwindcss = require('tailwindcss');
 const postcss = require('gulp-postcss');
+const rev = require('gulp-rev');
 
 gulp.task('js', () =>
   gulp
     .src('./js/**/*.js')
     .pipe(concat('main.js'))
     .pipe(envify())
+    .pipe(rev())
+    .pipe(gulp.dest('./site/js'))
+    .pipe(rev.manifest())
     .pipe(gulp.dest('./site/js'))
 );
 
@@ -19,6 +23,9 @@ gulp.task('css', () =>
   gulp
     .src('./css/main.css')
     .pipe(postcss([tailwindcss, autoprefixer]))
+    .pipe(rev())
+    .pipe(gulp.dest('./site/css'))
+    .pipe(rev.manifest())
     .pipe(gulp.dest('./site/css'))
 );
 
