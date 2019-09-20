@@ -52,3 +52,7 @@
     worker-src 'self';
     block-all-mixed-content;
     disown-opener;'''
+
+[[redirects]]
+  from = "/resume"
+  to = "/assets/resume-mraag.pdf"

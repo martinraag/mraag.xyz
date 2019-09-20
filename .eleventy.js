@@ -14,6 +14,7 @@ module.exports = function(config) {
   config.addPassthroughCopy('./site/images');
   config.addPassthroughCopy('./site/css');
   config.addPassthroughCopy('./site/js');
+  config.addPassthroughCopy('./site/assets');
   return {
     dir: {
       input: 'site',
