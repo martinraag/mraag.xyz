@@ -4,6 +4,7 @@ title: About
 header: About
 contentClass: mrx-about-content
 route: about
+templateEngineOverride: njk,md
 ---
 
 # 👋 Hi, I'm Martin.
@@ -18,7 +19,7 @@ I then seized the opportunity to build and manage the software development team 
 These days I'm self-employed, I work with clients to improve or design and build new software on
 public cloud environments. I focus mostly on backend code and infrastructure work, but have also
 taken on full stack development to get a new application off the ground. If that sounds like
-something you could use help with, feel free to [get in touch](#).
+something you could use help with, feel free to [get in touch](mailto:{{ social.email }}).
 
 I'm passionate about the open web and belive it's the basis for improving our experience on it.
 I think some of the best content today is still delivered via web feeds, in the form of blog posts
@@ -28,7 +29,7 @@ I started this blog inspired by the many people out there, who write on their ow
 websites. I hope to better my skills in writing and make it into a habit.
 
 I'm open to taking on new challenges in a permanent role. If you think we have aligning interests
-you can check out my [resume](#) and [reach out](#).
+you can check out my [resume](/resume) and [reach out](maltio:{{ social.email }}).
 
 # About the website
 
