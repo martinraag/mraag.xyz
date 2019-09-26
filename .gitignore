@@ -1,7 +1,8 @@
 node_modules
-
 site/css/*
+site/js/*
 dist
 .env
-
 *.log
+.DS_Store
+.netlify
