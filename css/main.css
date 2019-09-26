@@ -19,7 +19,7 @@ a :hover {
 }
 
 .mrx-post a {
-  @apply text-pink-400;
+  @apply text-pink-500;
 }
 
 .mrx-post ul {
