@@ -17,6 +17,7 @@ module.exports = function(config) {
   config.addPassthroughCopy('./site/css/*.css');
   config.addPassthroughCopy('./site/js/*.js');
   config.addPassthroughCopy('./site/assets');
+  config.addPassthroughCopy('./site/browserconfig.xml');
   return {
     dir: {
       input: 'site',
