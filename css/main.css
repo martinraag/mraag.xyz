@@ -8,6 +8,26 @@ a :hover {
   @apply mt-4;
 }
 
+.mrx-post h2 {
+  @apply text-2xl;
+  @apply mt-4;
+}
+
+.mrx-post h3 {
+  @apply text-xl;
+  @apply mt-4;
+}
+
+.mrx-post a {
+  @apply text-pink-400;
+}
+
+.mrx-post ul {
+  @apply list-disc;
+  @apply list-inside;
+  @apply mt-4;
+}
+
 .mrx-about-content {
   @apply font-serif;
   @apply text-gray-900;
