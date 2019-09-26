@@ -4,8 +4,38 @@ a :hover {
   @apply text-pink-400;
 }
 
-.mr-post p {
+.mrx-post p {
   @apply mt-4;
+}
+
+.mrx-post h2 {
+  @apply text-2xl;
+  @apply mt-4;
+}
+
+.mrx-post h3 {
+  @apply text-xl;
+  @apply mt-4;
+}
+
+.mrx-post a {
+  @apply text-pink-500;
+}
+
+.mrx-post ul {
+  @apply list-disc;
+  @apply list-inside;
+  @apply mt-4;
+}
+
+.mrx-post pre {
+  @apply mt-4;
+}
+
+.mrx-post p code {
+  @apply text-gray-900;
+  @apply bg-gray-300;
+  @apply text-base;
 }
 
 .mrx-about-content {

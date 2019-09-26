@@ -2,7 +2,6 @@ const fs = require('fs');
 const path = require('path');
 
 function mapAsset(route, asset) {
-  console.log(process.cwd());
   const data = fs.readFileSync(path.join('site', route, 'rev-manifest.json'));
   const manifest = JSON.parse(data);
   const revision = manifest[asset];
@@ -15,6 +14,7 @@ function mapAsset(route, asset) {
 module.exports = {
   css: {
     main: mapAsset('css', 'main.css'),
+    prism: mapAsset('css', 'prism.css'),
   },
   js: {
     main: mapAsset('js', 'main.js'),
