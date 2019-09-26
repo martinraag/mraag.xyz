@@ -4,7 +4,7 @@ a :hover {
   @apply text-pink-400;
 }
 
-.mr-post p {
+.mrx-post p {
   @apply mt-4;
 }
 
