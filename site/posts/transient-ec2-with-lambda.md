@@ -1,5 +1,6 @@
 ---
 title: Running transient servers with serverless
+date: 2019-09-26
 ---
 
 It would seem to me like the writings on _serverless_ making rounds on the web recently are quite polarising. On the one hand there are countless tutorials on building web apps around [FaaS](https://en.wikipedia.org/wiki/Function_as_a_service) offerings, that promise infinite scalability and reduced cost, but seldom delve into the reality of developing and operating such systems. Critical posts too can be short sighted, decrying the deficiencies of [trying to fit a square peg into a round hole](http://einaregilsson.com/serverless-15-percent-slower-and-eight-times-more-expensive/). In my experience _serverless_ tools are not an all-or-nothing proposition. To demonstrate this, I decided to write about a real world example of using [AWS Lambda](https://en.wikipedia.org/wiki/AWS_Lambda) to optimise running periodic jobs on EC2 instances.

@@ -1,5 +1,6 @@
 ---
 title: Hello World!
+date: 2019-09-12
 ---
 
 It must have been about 19 years ago that I was gifted a children’s book about the internet. It was my first exposure, if not a particularly deep one, to the protocols and languages that drive so much of the world around us. Little did the 11 year old me know he had just had a glimpse of what would become his career and hobby for years to come.
