@@ -22,7 +22,7 @@
     "eleventy-plugin-svg-contents": "^0.5.1",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
-    "gulp-envify": "^1.0.0",
+    "gulp-envify": "https://github.com/tomashanacek/gulp-envify#37d97bca9073ec4161957c69d774f1870fdb6e57",
     "gulp-postcss": "^8.0.0",
     "gulp-rev": "^9.0.0",
     "moment": "^2.24.0",
