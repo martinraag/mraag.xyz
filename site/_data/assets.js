@@ -14,6 +14,7 @@ function mapAsset(route, asset) {
 module.exports = {
   css: {
     main: mapAsset('css', 'main.css'),
+    prism: mapAsset('css', 'prism.css'),
   },
   js: {
     main: mapAsset('js', 'main.js'),

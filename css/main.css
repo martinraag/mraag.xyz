@@ -28,6 +28,16 @@ a :hover {
   @apply mt-4;
 }
 
+.mrx-post pre {
+  @apply mt-4;
+}
+
+.mrx-post p code {
+  @apply text-gray-900;
+  @apply bg-gray-300;
+  @apply text-base;
+}
+
 .mrx-about-content {
   @apply font-serif;
   @apply text-gray-900;

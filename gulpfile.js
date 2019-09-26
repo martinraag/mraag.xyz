@@ -21,7 +21,7 @@ gulp.task('js', () =>
 
 gulp.task('css', () =>
   gulp
-    .src('./css/main.css')
+    .src('./css/*.css')
     .pipe(postcss([tailwindcss, autoprefixer]))
     .pipe(rev())
     .pipe(gulp.dest('./site/css'))
