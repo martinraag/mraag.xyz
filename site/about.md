@@ -11,7 +11,7 @@ templateEngineOverride: njk,md
 
 I'm a software developer from 🇪🇪 Estonia, currently located in 🇬🇧 London, England.
 
-I've been a hacker professionally since 2008, when I started as an intern in Skype.
+I've been a hacker professionally since 2009, when I started as an intern in Skype.
 I honed my chops there, and subsequently in Microsoft, over the next 5 years.
 I then seized the opportunity to build and manage the software development team at a
 [startup creating a mobile app testing business](https://angel.co/company/testlio).
