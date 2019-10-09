@@ -11,8 +11,8 @@ templateEngineOverride: njk,md
 
 I'm a software developer from 🇪🇪 Estonia, currently located in 🇬🇧 London, England.
 
-I've been a hacker professionally since 2009, when I started as an intern in Skype.
-I honed my chops there, and subsequently in Microsoft, over the next 5 years.
+I've been a [hacker](http://www.paulgraham.com/hp.html) professionally since 2009, when I started as
+an intern in Skype. I honed my chops there, and subsequently in Microsoft, over the next 5 years.
 I then seized the opportunity to build and manage the software development team at a
 [startup creating a mobile app testing business](https://angel.co/company/testlio).
 
@@ -25,8 +25,10 @@ I'm passionate about the open web and belive it's the basis for improving our ex
 I think some of the best content today is still delivered via web feeds, in the form of blog posts
 and podcasts.
 
-I started this blog inspired by the many people out there, who write on their own beautiful
-websites. I hope to better my skills in writing, make it into a habit and hopefully convey something
+I started this blog inspired by the [many](https://blog.jessfraz.com)
+[people](https://alexwlchan.net) out there, who [write](https://christine.website) on
+[their own](https://shkspr.mobi/blog/) beautiful [websites](https://danielmiessler.com/blog/).
+I hope to better my skills in writing, make it into a habit and hopefully convey something
 useful along the way.
 
 I'm open to taking on new challenges in a permanent role. If you think we have aligning interests
