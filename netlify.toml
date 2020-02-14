@@ -57,13 +57,13 @@
   for = "/js/*"
 
   [headers.values]
-    Cache-Control = "public, max-age=604800"
+    Cache-Control = "public, max-age=31536000"
 
 [[headers]]
   for = "/css/*"
 
   [headers.values]
-    Cache-Control = "public, max-age=604800"
+    Cache-Control = "public, max-age=31536000"
 
 
 [[redirects]]
