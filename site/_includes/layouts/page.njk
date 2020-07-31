@@ -3,13 +3,13 @@
 {% block body %}
 
   <div class="md:flex min-h-screen">
-    <div class="md:max-w-md md:flex-none w-full min-h-full text-gray-700 px-10 lg:py-24 md:py-16 py-6 bg-gray-900">
+    <div class="md:max-w-md md:flex-none w-full min-h-full text-gray-700 px-10 md:py-16 py-6 bg-gray-900">
       {% block sidebar %}
-        <h1 class="font-extrabold text-4xl text-white text-center pb-10">
+        <h1 class="font-extrabold text-4xl text-white text-center py-10">
           Martin Raag
         </h1>
         <div class="{% if route != "index" -%} md:block hidden {%- endif %}">
-          <div class="w-full font-mono leading-relaxed text-gray-500">
+          <div class="w-full font-mono leading-relaxed text-gray-500 flex justify-center">
             <p>
               {% include "blurb.njk" %}
             </p>
