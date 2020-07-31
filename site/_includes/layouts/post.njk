@@ -2,9 +2,9 @@
 
 {% block body %}
 
-  <div class="items-center h-16 xl:px-40 md:px-16 px-5 text-gray-900">
-    <a href="/" class="font-extrabold text-4xl">mraag<span class="text-pink-400">.xyz</span></h1>
-    <div class="flex float-right py-5">
+  <div class="items-center h-16 xl:px-40 md:px-16 px-5 py-1 text-gray-900">
+    <a href="/" class="font-extrabold text-4xl text-gray-900">Martin Raag</a>
+    <div class="flex float-right py-4">
       {% include "nav.njk" %}
     </div>
   </div>
@@ -20,14 +20,7 @@
 
   <div class="border border-solid border-pink-400 mt-6 p-6">
     <div class="flex justify-center font-mono ">
-      <img class="h-0 mr-0 md:h-32 md:mr-6 hidden md:block"
-        srcset="/images/illustration-dark-128.png 1x,
-                /images/illustration-dark-256.png 2x,
-                /images/illustration-dark-384.png 3x,
-                /images/illustration-dark-512.png 4x"
-        src="/images/illustration-dark-128.png"
-        width="128" height="128" alt="Site logo">
-      <p>Written by
+      <p>
         {% include "blurb.njk" %}
       </p>
     </div>
