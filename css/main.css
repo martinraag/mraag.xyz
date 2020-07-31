@@ -55,7 +55,7 @@ a :hover {
 }
 
 .mrx-about-content a {
-  @apply text-pink-400;
+  @apply text-pink-500;
 }
 
 @tailwind components;
