@@ -38,6 +38,17 @@ a :hover {
   @apply text-base;
 }
 
+.mrx-post blockquote {
+  @apply border-l-4;
+  @apply border-pink-300;
+  @apply bg-gray-100;
+  @apply mt-4;
+}
+
+.mrx-post blockquote p {
+  @apply ml-8;
+}
+
 .mrx-about-content {
   @apply font-serif;
   @apply text-gray-900;
