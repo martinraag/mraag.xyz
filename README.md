@@ -30,7 +30,7 @@ MR_GA_ID=<google analytics id>
 MR_EMAIL=<contact email>
 MR_GITHUB_URL=<github profile url>
 MR_LINKEDINI_URL=<linkedin profile url>
-MR_TWITTER_URL=<twitter profile url>
+MR_MASTODON_URL=<mastodon profile url>
 MR_INSTAGRAM_URL=<instagram profile url>
 EOF
 ```
